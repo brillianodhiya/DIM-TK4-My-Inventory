@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS dim_tk4;
+
+USE dim_tk4;
+
 CREATE TABLE UserRoles (
 	id_role 	INT PRIMARY KEY AUTO_INCREMENT,
     role_name 	VARCHAR(255),
