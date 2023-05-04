@@ -63,12 +63,8 @@
               </a>
             </li>
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 href="penjualan.html"
               >
                 <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
@@ -83,8 +79,12 @@
             </li>
 
             <li class="relative px-6 py-3">
+              <span
+                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"
+              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 href="pelanggan.html"
               >
                 <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
@@ -161,12 +161,8 @@
               </a>
             </li>
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 href="penjualan.html"
               >
                 <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
@@ -180,8 +176,12 @@
               </a>
             </li>
             <li class="relative px-6 py-3">
+              <span
+                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"
+              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 href="pelanggan.html"
               >
                 <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
@@ -324,86 +324,38 @@
             <h2
               class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
             >
-              Penjualan
+              Pelanggan
             </h2>
 
             <!-- New Table -->
             <div
               class="w-full overflow-x-auto border-1 bg-white p-4 rounded-lg dark:bg-gray-800 shadow-xs"
             >
-              <div class="w-full overflow-hidden rounded-lg">
-                <form action="/simpan-penjualan.php">
-                  <label class="block text-sm">
-                    <span class="text-gray-700 dark:text-gray-400"
-                      >Tanggal</span
+              <div class="w-full overflow-hidden rounded-lg shadow-xs">
+                <div class="w-full overflow-x-auto">
+                  <table class="w-full whitespace-no-wrap">
+                    <thead>
+                      <tr
+                        class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
+                      >
+                        <th class="px-4 py-3">Id</th>
+                        <th class="px-4 py-3">Nama Pelanggan</th>
+                        <th class="px-4 py-3">Alamat</th>
+                        <th class="px-4 py-3">Kontak</th>
+                      </tr>
+                    </thead>
+                    <tbody
+                      class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
                     >
-                    <input
-                      type="date"
-                      class="block w-56 mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                    />
-                  </label>
-
-                  <label class="block text-sm mt-4">
-                    <span class="text-gray-700 dark:text-gray-400"
-                      >Jumlah Penjualan</span
-                    >
-                    <input
-                      type="number"
-                      class="w-56 block mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                      placeholder="0"
-                    />
-                  </label>
-
-                  <label class="block text-sm mt-4">
-                    <span class="text-gray-700 dark:text-gray-400"
-                      >Harga Jual</span
-                    >
-                    <input
-                      type="number"
-                      class="block w-56 mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                      placeholder="2000"
-                    />
-                  </label>
-                  <label class="block mt-4 text-sm">
-                    <span class="text-gray-700 dark:text-gray-400">
-                      Barang
-                    </span>
-                    <select
-                      class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                    >
-                      <option>Laptop</option>
-                      <option>Hardisk</option>
-                    </select>
-                  </label>
-
-                  <label class="block mt-4 text-sm">
-                    <span class="text-gray-700 dark:text-gray-400">
-                      Pelanggan
-                    </span>
-                    <select
-                      class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                    >
-                      <option>Vita</option>
-                      <option>Brilli</option>
-                    </select>
-                  </label>
-
-                  <!-- button  -->
-                  <div class="flex justify-between float-right mt-8 gap-2">
-                    <a
-                      href="penjualan.html"
-                      class="px-4 py-2 text-sm font-medium leading-5 border border-gray-100 rounded-lg active:bg-gray-100 hover:bg-gray-100 focus:outline-none focus:focus\:shadow-outline-gray"
-                    >
-                      Batalkan
-                    </a>
-                    <button
-                      type="submit"
-                      class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                    >
-                      Simpan Penjualan
-                    </button>
-                  </div>
-                </form>
+                      <tr class="text-gray-700 dark:text-gray-400">
+                        <td class="px-4 py-3 text-sm">1</td>
+                        <td class="px-4 py-3 text-sm">Kina</td>
+                        <td class="px-4 py-3 text-sm">Jl Pagelaran</td>
+                        <td class="px-4 py-3 text-sm">088xxxxxxxx</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
