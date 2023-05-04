@@ -18,9 +18,11 @@ CREATE TABLE Users (
     last_name	VARCHAR(255),
     phone		VARCHAR(20),
     address		TEXT,
-    id_role		INT FOREIGN KEY REFERENCES UserRoles(id_role),
+    id_role		INT,
     created_at	DATETIME,
-    updated_at	DATETIME
+    updated_at	DATETIME,
+
+    FOREIGN KEY (id_role) REFERENCES UserRoles(id_role)
 );
 
 CREATE TABLE Members (
@@ -45,9 +47,11 @@ CREATE TABLE Items (
     id_item 	INT PRIMARY KEY AUTO_INCREMENT,
     name 		VARCHAR(255),
     unit 		VARCHAR(50),
-    id_user		INT FOREIGN KEY REFERENCES Users(id_user),
+    id_user		INT,
     created_at	DATETIME,
-    updated_at	DATETIME
+    updated_at	DATETIME,
+
+    FOREIGN KEY (id_user) REFERENCES Users(id_user)
 );
 
 CREATE TABLE Purchasing (
@@ -55,11 +59,15 @@ CREATE TABLE Purchasing (
     purchasing_date 	DATE,
     purchasing_qty 		INT,
     purchasing_price 	DECIMAL(10,2),
-    id_item				INT FOREIGN KEY REFERENCES Items(id_item),
-    id_user				INT FOREIGN KEY REFERENCES Users(id_user),
-    id_supplier			INT FOREIGN KEY REFERENCES Suppliers(id_supplier),
+    id_item				INT,
+    id_user				INT,
+    id_supplier			INT,
     created_at			DATETIME,
-    updated_at			DATETIME
+    updated_at			DATETIME,
+
+    FOREIGN KEY (id_item)       REFERENCES Items(id_item),
+    FOREIGN KEY (id_user)       REFERENCES Users(id_user),
+    FOREIGN KEY (id_supplier)   REFERENCES Suppliers(id_supplier)
 );
 
 CREATE TABLE Sales (
@@ -67,11 +75,15 @@ CREATE TABLE Sales (
     sales_date 		DATE,
     sales_qty 		INT,
     sales_price 	DECIMAL(10,2),
-    id_item			INT FOREIGN KEY REFERENCES Items(id_item),
-    id_user			INT FOREIGN KEY REFERENCES Users(id_user),
-    id_supplier		INT FOREIGN KEY REFERENCES Suppliers(id_supplier),
+    id_item			INT,
+    id_user			INT,
+    id_supplier		INT,
     created_at		DATETIME,
-    updated_at		DATETIME
+    updated_at		DATETIME,
+
+    FOREIGN KEY (id_item)       REFERENCES Items(id_item),
+    FOREIGN KEY (id_user)       REFERENCES Users(id_user),
+    FOREIGN KEY (id_supplier)   REFERENCES Suppliers(id_supplier)
 );
 
 INSERT 
@@ -107,8 +119,4 @@ INSERT
 			('Shrim grower diet','Kg', 1,now(), now()),
 			('Fish grower super','Kg', 1,now(), now()),
 			('Nutrisi hewan','Kg', 1,now(), now());
-		
-		
 
-		
-		
