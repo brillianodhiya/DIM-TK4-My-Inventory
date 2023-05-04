@@ -41,12 +41,8 @@
           </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 href="index.html"
               >
                 <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
@@ -61,8 +57,12 @@
           </ul>
           <ul>
             <li class="relative px-6 py-3">
+              <span
+                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"
+              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 href="barang.html"
               >
                 <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
@@ -174,12 +174,8 @@
           </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 href="index.html"
               >
                 <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
@@ -194,8 +190,12 @@
           </ul>
           <ul>
             <li class="relative px-6 py-3">
+              <span
+                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"
+              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 href="barang.html"
               >
                 <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
@@ -400,49 +400,19 @@
             <h2
               class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
             >
-              Dashboard
+              Barang
             </h2>
 
             <!-- New Table -->
             <div
-              class="border-1 bg-white p-4 rounded-lg dark:bg-gray-800 shadow-xs"
+              class="w-full overflow-x-auto border-1 bg-white p-4 rounded-lg dark:bg-gray-800 shadow-xs"
             >
-              <h4 class="mb-4 font-semibold text-gray-700 dark:text-gray-200">
-                Keuntungan
-              </h4>
-              <div class="w-full overflow-hidden rounded-lg shadow-xs">
-                <div class="w-full overflow-x-auto">
-                  <table class="w-full whitespace-no-wrap">
-                    <thead>
-                      <tr
-                        class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
-                      >
-                        <th class="px-4 py-3">Id</th>
-                        <th class="px-4 py-3">Nama Pengguna</th>
-                        <th class="px-4 py-3">Keuntungan</th>
-                      </tr>
-                    </thead>
-                    <tbody
-                      class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
-                    >
-                      <tr class="text-gray-700 dark:text-gray-400">
-                        <td class="px-4 py-3 text-sm">1</td>
-
-                        <td class="px-4 py-3 text-sm">Hans Burger</td>
-                        <td class="px-4 py-3 text-sm">Rp 200.000</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="border-1 bg-white p-4 rounded-lg mt-4 dark:bg-gray-800 shadow-xs"
-            >
-              <h4 class="mb-4 font-semibold text-gray-700 dark:text-gray-200">
-                Stock Barang
-              </h4>
+              <a
+                href="tambah-barang.html"
+                class="float-right mb-4 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+              >
+                Tambah Barang
+              </a>
               <div class="w-full overflow-hidden rounded-lg shadow-xs">
                 <div class="w-full overflow-x-auto">
                   <table class="w-full whitespace-no-wrap">
@@ -452,7 +422,9 @@
                       >
                         <th class="px-4 py-3">Id</th>
                         <th class="px-4 py-3">Nama Barang</th>
-                        <th class="px-4 py-3">Stock</th>
+                        <th class="px-4 py-3">Satuan</th>
+                        <th class="px-4 py-3">Keterangan</th>
+                        <th class="px-4 py-3">Aksi</th>
                       </tr>
                     </thead>
                     <tbody
@@ -460,8 +432,19 @@
                     >
                       <tr class="text-gray-700 dark:text-gray-400">
                         <td class="px-4 py-3 text-sm">1</td>
+
                         <td class="px-4 py-3 text-sm">Laptop</td>
-                        <td class="px-4 py-3 text-sm">4</td>
+                        <td class="px-4 py-3 text-sm">Unit</td>
+                        <td class="px-4 py-3 text-sm">Lorem ipsum dolor</td>
+                        <td class="px-4 py-3 text-sm">t</td>
+                      </tr>
+                      <tr class="text-gray-700 dark:text-gray-400">
+                        <td class="px-4 py-3 text-sm">2</td>
+
+                        <td class="px-4 py-3 text-sm">Mouse</td>
+                        <td class="px-4 py-3 text-sm">Buah</td>
+                        <td class="px-4 py-3 text-sm">Lorem ipsum dolor</td>
+                        <td class="px-4 py-3 text-sm">t</td>
                       </tr>
                     </tbody>
                   </table>
