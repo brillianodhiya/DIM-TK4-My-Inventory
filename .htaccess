@@ -45,7 +45,11 @@ php_flag display_errors 1
 	RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
 	# Disable accessing files inside app folder from browser
-	# RewriteRule ^app/.*$ - [F,L]
+	RewriteRule ^app/.*$ - [F,L]
+
+	# Allow access all css, js and images in public directory
+	RewriteCond %{REQUEST_URI} !\.(?:css|js|jpeg|png|jpg|gif)$ [NC]
+    RewriteRule ^public/ - [L,F]
 </IfModule>
 
 <IfModule !mod_rewrite.c>
