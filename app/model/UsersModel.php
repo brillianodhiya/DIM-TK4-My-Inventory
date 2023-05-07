@@ -22,7 +22,12 @@ class UsersModel
     }
 
     function getUsers() {
-        $query = "SELECT * FROM Users";
+        $query = "
+            SELECT UR.role_name, U.*
+            FROM Users U
+            JOIN UserRoles UR ON U.id_role = UR.id_role;
+        ";
+
         $db = $this->database->prepare($query);
         $db->execute();
         return $db->fetchAll();

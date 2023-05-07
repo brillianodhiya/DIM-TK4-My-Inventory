@@ -3,17 +3,15 @@
 namespace controller;
 
 require_once('app/lib/Autoloader.php');
-use model\UsersModel;
 
-class HomeController
+use lib\Controller;
+
+class HomeController extends Controller
 {
-    private $usersModel;
-
-    public function __construct() {
-        $this->usersModel = new UsersModel();
-    }
-
     function index(): void {
-        echo '<pre>' . var_export($this->usersModel->getUsers(), true) . '</pre>';
+        $data = [
+            'pageTitle' => "Beranda"
+        ];
+        $this->view('index', $data);
     }
 }

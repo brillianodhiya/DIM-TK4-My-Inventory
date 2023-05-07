@@ -14,7 +14,7 @@ CREATE TABLE UserRoles
 CREATE TABLE Users
 (
     id_user    INT PRIMARY KEY AUTO_INCREMENT,
-    name       VARCHAR(255),
+    username   VARCHAR(255),
     `password` VARCHAR(255),
     first_name VARCHAR(255),
     last_name  VARCHAR(255),
@@ -100,7 +100,7 @@ VALUES (1, 'Admin', 'Admin'),
        (3, 'Member', 'Pelanggan');
 
 INSERT
-INTO Users (name, `password`, first_name, last_name, phone, address, id_role)
+INTO Users (username, `password`, first_name, last_name, phone, address, id_role)
 VALUES ('admin', 'admin', '1sampai8', 'Admin', '08123123123', 'Kediri', 1),
        ('admin_gudang', '123456', 'Admin', 'Gudang', '08124124124', 'Trenggalek', 2);
 

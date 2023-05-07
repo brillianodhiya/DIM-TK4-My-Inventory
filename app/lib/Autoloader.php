@@ -2,7 +2,11 @@
 spl_autoload_register( 'autoloader' );
 
 /**
- * An example of a project-specific implementation.
+ * Based on PHP Standard Recommendation (PSR), our team is using PSR-4 Autoloading standard.
+ * PSR-4 Autoloading describe a specification for autoloading classes from file paths.
+ *
+ * Read the full documentation here:
+ * https://www.php-fig.org/psr/
  *
  * @param string $class The fully-qualified class name.
  * @return void
