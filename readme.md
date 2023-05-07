@@ -1,40 +1,50 @@
-Berikut ini adalah contoh script teks untuk video tutorial PHP OOP dan MVC beserta berbagai elemen dan konsep yang akan dibahas dalam video tutorial:
+Baik, berikut adalah contoh skrip untuk YouTube tutorial PHP OOP dan MVC:
 
----
+Introduction:
+Halo teman-teman, selamat datang di tutorial PHP OOP dan MVC. Dalam tutorial ini, kita akan belajar cara membuat aplikasi web dengan menggunakan PHP Object Oriented Programming dan Model View Controller. Jadi, jika kamu sudah memiliki dasar-dasar PHP, jangan khawatir jika kamu belum terbiasa menggunakan OOP dan MVC. Kita akan memulai dari awal, dan saya akan menjelaskan setiap aspeknya secara terperinci untuk membantu kamu mengikuti tutorial ini.
 
-Halo, selamat datang di tutorial PHP OOP dan MVC. Pada video tutorial ini, saya akan membahas bagaimana cara membuat website dengan menggunakan konsep OOP dan MVC pada PHP.
+Outline:
 
-Sebelum memulai, jika kamu belum memahami konsep dasar PHP, saya sarankan untuk belajar terlebih dahulu untuk memudahkan memahami video tutorial ini.
+- Pengenalan OOP dan MVC
+- Persiapan Lingkungan
+- Membuat database
+- Menggunakan index.php sebagai router
+- Membuat Model
+- Menggunakan Namespace, require_once, dan use statements
+- Operasi CRUD User
+- Membuat Controller untuk User
+- Autoloader.php functions di folder lib
+- Membuat Controller.php file dan menggunakan methods
 
-Pada video tutorial ini, kita akan belajar cara membuat website dengan konsep OOP dan MVC menggunakan PHP. OOP atau Object Oriented Programming adalah salah satu metodologi dalam programming dimana kita membuat sebuah objek atau class untuk merepresentasikan sesuatu seperti data atau metode.
+Pengenalan OOP dan MVC
+Tidak seperti pendekatan Procedural Programming dalam PHP, OOP memperkenalkan konsep yang memungkinkan kamu untuk memisahkan logika aplikasi menjadi blok yang terorganisasi. MVC, atau Model-View-Controller, adalah pola arsitektur desain yang membagi aplikasi ke dalam tiga bagian: Model (data), View (tampilan), dan Controller (pengontrol). Ini memungkinkan kamu untuk memisahkan datamu, tampilanmu, dan kode logismu dari aplikasimu sehingga mudah dimodifikasi dan dipelihara.
 
-Sedangkan MVC atau Model View Controller adalah sebuah design pattern dalam programming yang biasanya digunakan untuk memisahkan antara tampilan, data, dan proses logika pada website atau aplikasi.
+Persiapan Lingkungan
+Untuk mengikuti tutorial ini, kamu harus menginstal XAMPP dan aplikasi yang diperlukan. (You can provide the links or just give a general explanation on how to do so)
 
-Adapun tahapan yang akan kita bahas dalam video tutorial ini adalah sebagai berikut:
+Membuat database
+Di sini kita akan membuat database dan mengatur tabel. Setelah itu, kita akan membuat koneksi database dan mengatur file koneksi.php.
 
-1. Membuat Database
-   Pertama, kita perlu membuat database untuk menyimpan data pada website kita.
+Menggunakan index.php sebagai router
+File index.php akan digunakan sebagai router untuk mengarahkan pengguna ke tampilan yang sesuai.
 
-2. Menggunakan Index.php sebagai Router
-   Selanjutnya, kita akan menggunakan index.php sebagai file router untuk mengatur URL dan membuat controller sesuai dengan URL yang diakses.
+Membuat Model
+Model akan menghubungkan dengan database dan bertanggung jawab untuk mengambil data dari database. Di sini kita akan membahas cara membuat dan penggunaan model dalam OOP.
 
-3. Membuat Model
-   Kemudian, kita akan membuat model untuk mengelola data yang akan ditampilkan pada website.
+Menggunakan Namespace, require_once, dan use statements
+Ini adalah tiga alat yang akan membantu kamu untuk mengatur kode PHP kamu. Di sini kita akan membahas cara menggunakannya.
 
-4. Namespace, Require Once, dan Use Statements
-   Pada tahapan ini, kita akan membahas bagaimana menggunakan namespace, require once, dan use statements pada file PHP.
+Operasi CRUD User
+Di sini kita akan membahas cara melakukan operasi CRUD (Create, Read, Update, Delete) User dalam aplikasi PHP kamu.
 
-5. CRUD User Operations
-   Selanjutnya, kita akan belajar bagaimana membuat fungsi CRUD (Create, Read, Update, Delete) pada user data.
+Membuat Controller untuk User
+Controller bertanggung jawab untuk memproses permintaan pengguna dan merespons dengan tampilan yang sesuai. Di sini kita akan membahas cara membuat Controller untuk User.
 
-6. Membuat Controller dengan UserController Code Example
-   Pada tahapan ini, kita akan membuat controller dengan menggunakan UserController code example untuk mengelola data dari user.
+Autoloader.php functions di folder lib
+Autoloader.php berfungsi untuk memuat file PHP secara otomatis pada saat dibutuhkan. Di sini kita akan membahas cara menggunakannya.
 
-7. Autoloader.php Functions pada Lib Folder
-   Terakhir, kita akan membahas mengenai Autoloader.php Functions pada Lib Folder yang digunakan untuk memuat class secara otomatis.
+Membuat Controller.php file dan menggunakan methods
+Dalam tutorial ini, kita akan membuat Controller.php code example dan menjelaskan beberapa methods yang digunakan seperti getBaseUrl, model, dan view.
 
-Nah, demikianlah tahapan-tahapan yang akan kita bahas pada video tutorial ini. Sebelum memulai, pastikan untuk meng-install PHP, Apache, dan MySQL terlebih dahulu di sistem operasi yang kamu gunakan.
-
-Agar lebih mudah dipahami, saya telah menyertakan contoh-contoh penggunaan dan kode di dalam video tutorial ini.
-
-Yuk, langsung saja kita mulai tutorial pembuatan website dengan menggunakan konsep OOP dan MVC pada PHP.
+Conclusion
+Itulah tutorial dasar PHP OOP dan MVC tentang cara membuat aplikasi web dengan menggunakan OOP dan MVC. Semoga kamu bisa mengikuti dengan lancar, dan jika kamu memiliki pertanyaan lebih lanjut, jangan ragu untuk menanyakan di kolom komentar. Terima kasih!
