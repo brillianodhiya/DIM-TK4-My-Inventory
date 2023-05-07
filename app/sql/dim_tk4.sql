@@ -101,8 +101,8 @@ VALUES (1, 'Admin', 'Admin'),
 
 INSERT
 INTO Users (username, `password`, first_name, last_name, phone, address, id_role)
-VALUES ('admin', 'admin', '1sampai8', 'Admin', '08123123123', 'Kediri', 1),
-       ('admin_gudang', '123456', 'Admin', 'Gudang', '08124124124', 'Trenggalek', 2);
+VALUES ('admin', '1sampai8', 'Yoga', 'Pranata', '08123123123', 'Kediri', 1),
+       ('admin_gudang', '123456', 'Brilliano', 'Dhya', '08124124124', 'Trenggalek', 2);
 
 INSERT
 INTO Members (name, address, contact)
