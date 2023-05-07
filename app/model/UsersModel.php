@@ -15,7 +15,7 @@ class UsersModel
     }
 
     function saveUser($username, $password, $firstName, $lastName, $phone, $address, $idRole) {
-        $query = "INSERT INTO Users (name, `password`, first_name, last_name, phone, address, id_role) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $query = "INSERT INTO Users (username, `password`, first_name, last_name, phone, address, id_role) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $db = $this->database->prepare($query);
         $executed = $db->execute($username, $password, $firstName, $lastName, $phone, $address, $idRole);
         return $executed;
@@ -42,7 +42,7 @@ class UsersModel
 
     function updateUser($username, $password, $firstName, $lastName, $phone, $address, $idRole, $idUser) {
         $query = "UPDATE Users 
-                    SET name = ?, 
+                    SET username = ?, 
                         `password` = ?, 
                         first_name = ?, 
                         last_name = ?, 
