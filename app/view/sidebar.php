@@ -30,17 +30,17 @@
                 >
                     <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
                         <path
-                            d="M19.5,16c0,.553-.447,1-1,1h-2c-.553,0-1-.447-1-1s.447-1,1-1h2c.553,0,1,.447,1,1Zm4.5-1v5c0,2.206-1.794,4-4,4H4c-2.206,0-4-1.794-4-4v-5c0-2.206,1.794-4,4-4h1V4C5,1.794,6.794,0,9,0h6c2.206,0,4,1.794,4,4v7h1c2.206,0,4,1.794,4,4ZM7,11h10V4c0-1.103-.897-2-2-2h-6c-1.103,0-2,.897-2,2v7Zm-3,11h7V13H4c-1.103,0-2,.897-2,2v5c0,1.103,.897,2,2,2Zm18-7c0-1.103-.897-2-2-2h-7v9h7c1.103,0,2-.897,2-2v-5Zm-14.5,0h-2c-.553,0-1,.447-1,1s.447,1,1,1h2c.553,0,1-.447,1-1s-.447-1-1-1ZM14,5c0-.553-.447-1-1-1h-2c-.553,0-1,.447-1,1s.447,1,1,1h2c.553,0,1-.447,1-1Z"
+                            d="m7.5 13a4.5 4.5 0 1 1 4.5-4.5 4.505 4.505 0 0 1 -4.5 4.5zm0-7a2.5 2.5 0 1 0 2.5 2.5 2.5 2.5 0 0 0 -2.5-2.5zm7.5 17v-.5a7.5 7.5 0 0 0 -15 0v.5a1 1 0 0 0 2 0v-.5a5.5 5.5 0 0 1 11 0v.5a1 1 0 0 0 2 0zm9-5a7 7 0 0 0 -11.667-5.217 1 1 0 1 0 1.334 1.49 5 5 0 0 1 8.333 3.727 1 1 0 0 0 2 0zm-6.5-9a4.5 4.5 0 1 1 4.5-4.5 4.505 4.505 0 0 1 -4.5 4.5zm0-7a2.5 2.5 0 1 0 2.5 2.5 2.5 2.5 0 0 0 -2.5-2.5z"
                         />
                     </svg>
 
-                    <span class="ml-4">Daftar User</span>
+                    <span class="ml-4">Data User</span>
                 </a>
             </li>
             <li class="relative px-6 py-3">
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
+                    href="<?php echo $BASE_URL . 'barang'; ?>"
                 >
                     <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
                         <path
@@ -54,7 +54,7 @@
             <li class="relative px-6 py-3">
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
+                    href="<?php echo $BASE_URL . 'sales'; ?>"
                 >
                     <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
                         <path
@@ -70,7 +70,7 @@
             <li class="relative px-6 py-3">
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
+                    href="<?php echo $BASE_URL . 'members'; ?>"
                 >
                     <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
                         <path
@@ -84,7 +84,7 @@
             <li class="relative px-6 py-3">
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
+                    href="<?php echo $BASE_URL . 'purchasing'; ?>"
                 >
                     <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
                         <circle cx="7" cy="22" r="2"/>
@@ -104,7 +104,7 @@
             <li class="relative px-6 py-3">
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
+                    href="<?php echo $BASE_URL . 'suppliers'; ?>"
                 >
                     <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
                         <path

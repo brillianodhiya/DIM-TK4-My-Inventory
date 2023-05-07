@@ -126,3 +126,19 @@ VALUES ('Pakan udang', 'Kg', 1),
        ('Fish grower super', 'Kg', 1),
        ('Nutrisi hewan', 'Kg', 1);
 
+INSERT
+INTO Sales (sales_date, sales_qty, sales_price, id_item, id_user, id_supplier)
+VALUES ('2023-05-05', 10, 500000, 1, 1, 1),
+       ('2023-05-05', 10, 700000, 3, 2, 3),
+       ('2023-05-06', 10, 800000, 2, 2, 5),
+       ('2023-05-06', 10, 1000000, 5, 1, 4),
+       ('2023-05-07', 10, 1500000, 4, 2, 2);
+
+INSERT
+INTO Purchasing (purchasing_date, purchasing_qty, purchasing_price, id_item, id_user, id_supplier)
+VALUES ('2023-05-01', 10, 300000, 1, 1, 1),
+       ('2023-05-01', 10, 500000, 3, 2, 3),
+       ('2023-05-03', 10, 700000, 2, 2, 5),
+       ('2023-05-03', 10, 800000, 5, 1, 4),
+       ('2023-05-04', 10, 1000000, 4, 2, 2);
+

@@ -54,13 +54,13 @@
                         />
                     </svg>
 
-                    <span class="ml-4">Daftar User</span>
+                    <span class="ml-4">Data User</span>
                 </a>
             </li>
             <li class="relative px-6 py-3">
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
+                    href="<?php echo $BASE_URL . 'barang'; ?>"
                 >
                     <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
                         <path
@@ -74,7 +74,7 @@
             <li class="relative px-6 py-3">
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
+                    href="<?php echo $BASE_URL . 'sales'; ?>"
                 >
                     <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
                         <path
@@ -93,7 +93,7 @@
               ></span>
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                    href="#"
+                    href="<?php echo $BASE_URL . 'members'; ?>"
                 >
                     <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
                         <path
@@ -101,6 +101,40 @@
                         />
                     </svg>
                     <span class="ml-4">Pelanggan</span>
+                </a>
+            </li>
+            <li class="relative px-6 py-3">
+                <a
+                    class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="<?php echo $BASE_URL . 'purchasing'; ?>"
+                >
+                    <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
+                        <circle cx="7" cy="22" r="2"/>
+                        <circle cx="17" cy="22" r="2"/>
+                        <path
+                            d="M23,3H21V1a1,1,0,0,0-2,0V3H17a1,1,0,0,0,0,2h2V7a1,1,0,0,0,2,0V5h2a1,1,0,0,0,0-2Z"
+                        />
+                        <path
+                            d="M21.771,9.726a.994.994,0,0,0-1.162.806A3,3,0,0,1,17.657,13H5.418l-.94-8H13a1,1,0,0,0,0-2H4.242L4.2,2.648A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.829-2H17.657a5,5,0,0,0,4.921-4.112A1,1,0,0,0,21.771,9.726Z"
+                        />
+                    </svg>
+
+                    <span class="ml-4">Pembelian</span>
+                </a>
+            </li>
+
+            <li class="relative px-6 py-3">
+                <a
+                    class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="<?php echo $BASE_URL . 'suppliers'; ?>"
+                >
+                    <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor">
+                        <path
+                            d="M19,5H16.9A5.009,5.009,0,0,0,12,1H5A5.006,5.006,0,0,0,0,6v9a4,4,0,0,0,3.061,3.877,3.5,3.5,0,1,0,6.9.123h4.082a3.465,3.465,0,0,0-.041.5,3.5,3.5,0,0,0,7,0,3.4,3.4,0,0,0-.061-.623A4,4,0,0,0,24,15V10A5.006,5.006,0,0,0,19,5Zm3,5v1H17V7h2A3,3,0,0,1,22,10ZM2,15V6A3,3,0,0,1,5,3h7a3,3,0,0,1,3,3V17H4A2,2,0,0,1,2,15Zm6,4.5a1.5,1.5,0,0,1-3,0,1.418,1.418,0,0,1,.093-.5H7.907A1.418,1.418,0,0,1,8,19.5ZM17.5,21A1.5,1.5,0,0,1,16,19.5a1.41,1.41,0,0,1,.093-.5h2.814a1.41,1.41,0,0,1,.093.5A1.5,1.5,0,0,1,17.5,21ZM20,17H17V13h5v2A2,2,0,0,1,20,17Z"
+                        />
+                    </svg>
+
+                    <span class="ml-4">Supplier</span>
                 </a>
             </li>
         </ul>
