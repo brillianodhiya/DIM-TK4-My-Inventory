@@ -21,7 +21,7 @@ Persiapan Lingkungan:
 Untuk mengikuti tutorial ini, pastikan kamu telah menginstal XAMPP dan aplikasi yang diperlukan.
 
 Membuat Database:
-Kita akan membuat database dan mengatur tabel, kemudian membuat koneksi ke database dan menjalankan file koneksi.php.
+Kita akan membuat database dan mengatur tabel, kemudian membuat koneksi ke database dan menjalankan file /app/database/Database.php.
 
 Menggunakan index.php sebagai router:
 File index.php akan menjadi router untuk mengarahkan pengguna ke tampilan yang tepat.
