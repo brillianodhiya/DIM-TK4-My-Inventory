@@ -6,7 +6,7 @@ class Controller
 {
     private $BASE_PATH = 'dim_tk4';
 
-    private function getBaseUrl(): string {
+    public function getBaseUrl(): string {
         if(isset($_SERVER['HTTPS'])){
             $protocol = ($_SERVER['HTTPS'] && $_SERVER['HTTPS'] != "off") ? "https" : "http";
         }

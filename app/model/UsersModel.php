@@ -17,7 +17,8 @@ class UsersModel
     function saveUser($username, $password, $firstName, $lastName, $phone, $address, $idRole) {
         $query = "INSERT INTO Users (username, `password`, first_name, last_name, phone, address, id_role) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $db = $this->database->prepare($query);
-        $executed = $db->execute($username, $password, $firstName, $lastName, $phone, $address, $idRole);
+        $values = array($username, $password, $firstName, $lastName, $phone, $address, $idRole);
+        $executed = $db->execute($values);
         return $executed;
     }
 
@@ -36,8 +37,8 @@ class UsersModel
     function getUserById($userId) {
         $query = "SELECT * FROM Users WHERE id_user = ?";
         $db = $this->database->prepare($query);
-        $db->execute($userId);
-        return $db->fetchAll();
+        $db->execute(array($userId));
+        return $db->fetch();
     }
 
     function updateUser($username, $password, $firstName, $lastName, $phone, $address, $idRole, $idUser) {
@@ -51,13 +52,14 @@ class UsersModel
                         id_role = ?
                     WHERE id_user = ?";
         $db = $this->database->prepare($query);
-        $executed = $db->execute($username, $password, $firstName, $lastName, $phone, $address, $idRole, $idUser);
+        $values = array($username, $password, $firstName, $lastName, $phone, $address, $idRole, $idUser);
+        $executed = $db->execute($values);
         return $executed;
     }
 
-    function deleteUser($idUser) {
+    function deleteUser($userId) {
         $query = "DELETE FROM Users WHERE id_user = ?";
         $db = $this->database->prepare($query);
-        return $db->execute($idUser);
+        return $db->execute(array($userId));
     }
 }
